@@ -1,5 +1,5 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
-import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
+import {Archival, IArchivalProps } from "./App";
 import * as React from "react";
 
 export class arcival implements ComponentFramework.ReactControl<IInputs, IOutputs> {
@@ -33,9 +33,9 @@ export class arcival implements ComponentFramework.ReactControl<IInputs, IOutput
      */
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
     
-        const props: IHelloWorldProps = { name: context.parameters.sampleProperty.raw || "" };
+        const props: IArchivalProps = { data: context.parameters.sampleProperty.raw || "" };
         return React.createElement(
-            HelloWorld, props
+            Archival, props
         );
     }
 

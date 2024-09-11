@@ -7,7 +7,7 @@ export interface IDataProps {
 }
 
 const data = {
-  accounts: [
+  "accounts": [
     {
       "account_id": "1",
       "name": "Account One",
